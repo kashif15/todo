@@ -1,0 +1,98 @@
+body {
+  background-color: #222222;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.create-section {
+  margin-bottom: 20px;
+}
+
+.create-section input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.display-section {
+  background-color: #3366cc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 400px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.todo-item label {
+  margin-right: 10px;
+  flex-grow: 1;
+  color: #333333;
+  overflow-wrap: break-word;
+}
+
+.todo-item:hover {
+  background-color: #e6e6e6;
+}
+
+.todo-item .remove {
+  cursor: pointer;
+  color: #ff0000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.todo-item:hover .remove {
+  opacity: 1;
+}
+
+.items-left {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-left .filter-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.items-left .filter-buttons .filter-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: #ffffff;
+}
+
+.items-left .filter-buttons .filter-btn.active {
+  background-color: #555555;
+  color: #ffffff;
+}

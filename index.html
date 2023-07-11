@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="create-section">
+      <input type="text" id="todoInput" placeholder="Enter a todo">
+    </div>
+    <div class="display-section" id="displaySection">
+      <div id="todoList"></div>
+      <div class="items-left" id="itemsLeftText">
+        <div id="itemsLeft"></div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" id="filterAllBtn">All</button>
+          <button class="filter-btn" id="filterActiveBtn">Active</button>
+          <button class="filter-btn" id="filterCompletedBtn">Complete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
